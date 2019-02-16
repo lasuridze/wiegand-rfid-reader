@@ -24,12 +24,12 @@ const wgnd0 = new Gpio(d0, "in", "both");
 const wgnd1 = new Gpio(d1, "in", "both");
 reader.begin({ d0: d0, d1: d1});
 
-reader.on('data', data => {
-    console.log('Got', data.length, 'bits from wiegand with data:', data);
+reader.on('id', id => {
+    console.log('Got', id, 'from RFID reader');
 });
 
-reader.on('id', (id) => {
-    console.log('Got', id, 'from RFID reader');
+reader.on('error', err => {
+    console.log(err);
 });
 
 process.on('SIGINT', () => {
