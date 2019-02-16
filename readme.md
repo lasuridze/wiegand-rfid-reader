@@ -1,7 +1,7 @@
 # wiegand
 
-Decoder for [wiegand](https://en.wikipedia.org/wiki/Wiegand_interface) readers on GPIO.
-Currently works on linux only, but can be tested on other platforms.
+A fork of [node-wiegand](https://github.com/samt/node-wiegand) for only 26bits wiegand readers on GPIO.  
+Tested with EM-18 Reader Module on a Raspberry Pi 3 model B.
 
 ## installation
 
