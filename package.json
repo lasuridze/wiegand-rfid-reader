@@ -22,7 +22,7 @@
   "homepage": "https://github.com/7aman/wiegand-rfid-reader#readme",
   "dependencies": {
     "debug": "^3.1.0",
-    "epoll": "*"
+    "onoff": "*"
   },
   "devDependencies": {
     "mocha": "^4.0.1",
